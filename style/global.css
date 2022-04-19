@@ -54,3 +54,9 @@ body, button, input, textarea {
     white-space: nowrap;
     border-width: 0;
 }
+
+/*---------------- input and buttons ----------------- */
+input, button, .button {
+    border-radius: .8rem;
+    height: 5rem;
+}

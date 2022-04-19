@@ -41,3 +41,8 @@ input {
     border: .2rem solid var(--grey-blue);
     padding: 0 1.6rem; /*top e bottom ZERO, para poder usar o height no (input,button, .button{})*/
 }
+
+input, button, .button {
+    width: 100%;
+    margin-bottom: 1.8rem;
+}

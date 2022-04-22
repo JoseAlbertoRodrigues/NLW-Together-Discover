@@ -102,7 +102,7 @@
 
 .question-wrapper .question-content {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
 }
 
 .question-wrapper .question-content .user {
@@ -113,6 +113,10 @@
 
 .question-wrapper .question-content p {
     margin-left: 1.6rem;
+    word-break: break-all; /* para não quebrar o layout */ 
+    display: flex;
+    align-items: center;
+    min-height: 5.5rem;
 }
 
 .question-wrapper .actions {
@@ -132,4 +136,13 @@
 
 .question-wrapper .actions > a + a { /*pega o irmão de a; ou assim: .question-wrapper .actions > a:nth-child(2)*/
     margin-left: 2.4rem;
+}
+
+/*----------- QUESTION READ ---------------------------*/
+.question-wrapper.read {
+    background: var(--grey-medium);
+}
+
+.question-wrapper.read .question-content .user {
+    background: var(--grey-blue);
 }

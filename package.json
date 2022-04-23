@@ -1,0 +1,24 @@
+{
+  "name": "NLW-Together-Discover",
+  "version": "1.0.0",
+  "description": "Projeto desenvolvido para gerenciar perguntas anônimas de usuários direcionadas ao dono da página. Projeto desenvolvido na semana NLW Rocketseat na missão discover",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JoseAlbertoRodrigues/NLW-Together-Discover.git"
+  },
+  "keywords": [],
+  "author": "José Alberto Rodrigues Neto",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JoseAlbertoRodrigues/NLW-Together-Discover/issues"
+  },
+  "homepage": "https://github.com/JoseAlbertoRodrigues/NLW-Together-Discover#readme",
+  "dependencies": {
+    "ejs": "^3.1.7",
+    "express": "^4.17.3"
+  }
+}

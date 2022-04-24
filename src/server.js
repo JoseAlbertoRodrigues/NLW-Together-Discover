@@ -8,6 +8,8 @@ const server = express() // criando o server
 
 server.set('view engine', 'ejs') // o responsável da view vai ser o ejs
 
+server.use(express.static('public'))
+
 server.set('views', path.join(__dirname, 'views'))
 
 server.use(route) // falar para o node usar o route

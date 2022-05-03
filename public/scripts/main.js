@@ -26,8 +26,14 @@ function handleClick(event, check = true) {
     event.preventDefault() //para não aparecer o # na url, o link não se comporta mais como links
 
     const text = check ? "Marcar como lida" : "Excluir"
+    const slug = check ? "check" : "delete"
 
-    
+    // pegar o código da sala
+    const roomId = document.querySelector('#room-id').dataset.id
+
+    //pegar a rota 
+    const form = document.querySelector('.modal form')
+    form.setAttribute("action", `/room/${roomId}/:question/${slug}`)
 
     modalTitle.innerHTML = `${text} esta pergunta`
     modalDescription.innerHTML = `Tem certeza que deseja ${text.toLowerCase()} esta pergunta?`

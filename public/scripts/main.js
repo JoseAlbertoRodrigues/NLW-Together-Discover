@@ -30,10 +30,12 @@ function handleClick(event, check = true) {
 
     // pegar o código da sala
     const roomId = document.querySelector('#room-id').dataset.id
+    // Pegar o id da questão pelo data-id
+    const questionId = event.target.dataset.id
 
     //pegar a rota 
     const form = document.querySelector('.modal form')
-    form.setAttribute("action", `/room/${roomId}/:question/${slug}`)
+    form.setAttribute("action", `/room/${roomId}/${questionId}/${slug}`)
 
     modalTitle.innerHTML = `${text} esta pergunta`
     modalDescription.innerHTML = `Tem certeza que deseja ${text.toLowerCase()} esta pergunta?`

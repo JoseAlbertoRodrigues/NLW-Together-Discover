@@ -12,6 +12,8 @@ server.use(express.static('public'))
 
 server.set('views', path.join(__dirname, 'views'))
 
+server.use(express.urlencoded({extended: true})) // (midle) pegar o conteúdo que está vindo do formulário, decodificar e passar para o controller
+
 server.use(route) // falar para o node usar o route
 
 server.listen(3000, () => console.log('RODANDO')) // porta para ficar ouvindo o servidor

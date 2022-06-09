@@ -19,7 +19,9 @@
   "homepage": "https://github.com/JoseAlbertoRodrigues/NLW-Together-Discover#readme",
   "dependencies": {
     "ejs": "^3.1.7",
-    "express": "^4.17.3"
+    "express": "^4.17.3",
+    "sqlite": "^4.1.1",
+    "sqlite3": "^5.0.8"
   },
   "devDependencies": {
     "nodemon": "^2.0.15"

@@ -7,7 +7,8 @@ const route = express.Router() // falar quem é o route, ela guarda todas as fun
 route.get('/', (req, res) => res.render('index', {page: 'enter-room'})) //requisição e resposta; res.render() de renderizar na tela
 route.get('/create-pass', (req, res) => res.render('index', {page: 'create-pass'}))
 
-route.get('/room/:room', (req, res) => res.render('room'))
+//route.get('/room/:room', (req, res) => res.render('room'))
+route.get('/room/:room', RoomController.open)
 
 // formato que o formulário de dentro da modal tem que passar a informação
 // ação para quando for clicado no modal

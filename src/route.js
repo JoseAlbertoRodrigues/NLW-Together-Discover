@@ -8,12 +8,15 @@ route.get('/', (req, res) => res.render('index', {page: 'enter-room'})) //requis
 route.get('/create-pass', (req, res) => res.render('index', {page: 'create-pass'}))
 
 //route.get('/room/:room', (req, res) => res.render('room'))
+route.post('/create-room', RoomController.create)
 route.get('/room/:room', RoomController.open)
 
+route.post('/question/create/:room', QuestionController.create)
 // formato que o formulário de dentro da modal tem que passar a informação
 // ação para quando for clicado no modal
 route.post('/question/:room/:question/:action', QuestionController.index) //route.post('/room/sala/pergunta/acao')
-route.post('/create-room', RoomController.create)
+
+
 
 module.exports = route // tenho que exportar o route para ele poder usar... estou exportando a constante route
 
